@@ -37,14 +37,14 @@ public class ArrayThread extends Thread {
 	private void simpleFor() {
 		int length = array.length;
 		for (int i = 0; i < length; i++)
-			;
+			array[i] *= 1;
 
 	}
 
 	private void forEach() {
 		for (@SuppressWarnings("unused")
 		int n : array)
-			;
+			n *= 1;
 
 	}
 
